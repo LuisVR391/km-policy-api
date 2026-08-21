@@ -354,22 +354,17 @@ Las abstracciones y patrones se incorporarán únicamente cuando resuelvan una n
 
 ## Desarrollo local
 
-Los requisitos y comandos de ejecución se documentarán conforme se incorporen los primeros proyectos .NET y servicios necesarios.
+Consulta [Entorno de desarrollo](docs/development-environment.md) para instalar y verificar las herramientas utilizadas actualmente por el proyecto.
 
-Una vez disponible el entorno completo, la intención es poder iniciar sus dependencias mediante Docker Compose y ejecutar la aplicación utilizando la CLI de .NET.
-
-Ejemplo previsto:
+El flujo básico de la CLI de .NET será:
 
 ```bash
-docker compose up -d
-
 dotnet restore
 dotnet build
 dotnet test
-dotnet run --project src/KmPolicy.Api
 ```
 
-> Estos comandos representan el flujo previsto y pueden cambiar durante el desarrollo.
+Los comandos podrán ejecutarse cuando la solución y sus primeros proyectos estén disponibles.
 
 ---
 
